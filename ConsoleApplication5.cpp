@@ -84,6 +84,7 @@ int main() {
         cout << "Input error" << endl;
         return 0;
     }
+    cout << "Before turn:" << endl;
     ifstream in("text.txt");
     numbOfElem.push_back(0);
     for (int i = 0;i < count; i++) {
@@ -111,9 +112,7 @@ int main() {
     for (int i = (A.sizeOf()-1);i > -1;i--) {
         newA.push_back(A.getDataAtPosition(i));
     }
-    cout << "--------------------------" << endl;
-    column.printList();
-    columnNew.printList();
+    cout << "After turn:" << endl;
     for (int i = 0;i < matrSize;i++) {
         a = numbOfELemNEw.getDataAtPosition(i + 1) - numbOfELemNEw.getDataAtPosition(i);
         cout << "0 ";
